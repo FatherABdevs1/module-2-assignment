@@ -1,0 +1,81 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+div {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+}
+h2 {
+    text-align: center;
+    padding-bottom: 0px;
+}
+.column {
+   /* width: 30%;*/
+    border: 2px solid;
+    background-color: dimgrey;
+    padding: 5px;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    text-align: justify;
+}
+h3 {
+    float: right;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+}
+p {
+    padding: 10px;
+    text-align: justify;
+    color: black;
+}
+.red {
+    background-color: red;
+    ;
+}
+.yellow {
+    background-color: orange;
+}
+.blue {
+    background-color: blue;
+}
+/*for mobile phones*/
+[class="row"] {
+    width: 100%;
+}
+@media only screen and (min-width: 767px)  {
+    .column {
+        width: 100%;
+    } 
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*for desktop*/
+@media (min-width: 992px) { 
+    .column  {
+        width: 30%;
+    } 
+}
+/*for tablets*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .column {
+        float: left;
+    }
+   
+    }
